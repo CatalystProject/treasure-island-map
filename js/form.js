@@ -53,6 +53,7 @@ googleForm.sendFormData(data);
    
                 
             });*/
+            button.button('reset');
         }
 
         function validate(form) {
