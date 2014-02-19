@@ -5,7 +5,7 @@
 	var features;
 	var map = mapbox.map('map');
    	map.addLayer(mapbox.layer().id('willsimm.hahfo0cc',getData));
-   	map.centerzoom({ lat:56.5007, lon: -6.8805 }, 1);
+   	map.centerzoom({ lat:56.5007, lon: -6.8805 }, 12);
    	map.ui.zoomer.add();
     map.ui.zoombox.add();
     map.ui.attribution.add()
