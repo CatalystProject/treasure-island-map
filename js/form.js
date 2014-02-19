@@ -49,13 +49,10 @@ googleForm.sendFormData(data);
                     button.button('reset');
                     //window.location = 'index.html#new';
                     console.log(data);
-                }*/
+                }
+   
                 
-                
-                
-                
-                
-            });
+            });*/
         }
 
         function validate(form) {
