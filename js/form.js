@@ -4,7 +4,7 @@ $(function(){
 
     // Set up map
     var m = mapbox.map('map').addLayer(mapbox.layer().id('willsimm.hahfo0cc'));
-    m.centerzoom({ lat:56.5007, lon: -6.8805 }, 8);
+    m.centerzoom({ lat:56.5007, lon: -6.8805 }, 12);
     //m.addLayer(mapbox.layer().id('nigeriaoil.nigeria-lga'));
 
     // Set up map ui features with point selector
