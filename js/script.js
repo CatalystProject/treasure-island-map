@@ -92,8 +92,8 @@
 					}
 	            };
 	            for (var y in entry) {
-	                if (y === latitude) feature.geometry.coordinates[1] = parseFloat(entry[y].$t);
-	                else if (y === longitude) feature.geometry.coordinates[0] = parseFloat(entry[y].$t);
+	                if (y === latfield) feature.geometry.coordinates[1] = parseFloat(entry[y].$t);
+	                else if (y === lonfield) feature.geometry.coordinates[0] = parseFloat(entry[y].$t);
 	                else if (y.indexOf('gsx$') === 0) {
 	                    feature.properties[y.replace('gsx$', '')] = entry[y].$t;
 	                }
