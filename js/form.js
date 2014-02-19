@@ -24,7 +24,14 @@ $(function(){
     var now = new Date();
     now = now.getDate() + '/' + (now.getMonth()+1) + '/' +  now.getFullYear();
     $('#entry_284647925').val(now).datepicker({format:'dd/mm/yyyy'});
-    $('#entry_574205951').timepicker();
+    $('#entry_574205951').timepicker({
+                minuteStep: 1,
+                template: 'modal',
+                appendWidgetTo: 'body',
+                showSeconds: true,
+                showMeridian: false,
+                defaultTime: false
+            });
     
 
     // Handle form submission
