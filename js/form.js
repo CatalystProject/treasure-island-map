@@ -1,10 +1,10 @@
 $(function(){
 
-    var formUrl = 'https://docs.google.com/a/developmentseed.org/spreadsheet/formResponse?formkey=dGdwaW1VUW5uY0FSMjF0RVZBVldLTUE6MQ';
+    var formUrl = 'https://docs.google.com/forms/d/1z1Jaif-HgxOMKROmNPXbRSVfSS0B-QCJbhM1RWWPwwo/viewform';//'https://docs.google.com/a/developmentseed.org/spreadsheet/formResponse?formkey=dGdwaW1VUW5uY0FSMjF0RVZBVldLTUE6MQ';
 
     // Set up map
-    var m = mapbox.map('map').addLayer(mapbox.layer().id('nigeriaoil.map-vbd0fpwq,nigeriaoil.nigeria-lga'));
-    m.addLayer(mapbox.layer().id('nigeriaoil.nigeria-lga'));
+    var m = mapbox.map('map'); //.addLayer(mapbox.layer().id('nigeriaoil.map-vbd0fpwq,nigeriaoil.nigeria-lga'));
+    //m.addLayer(mapbox.layer().id('nigeriaoil.nigeria-lga'));
 
     // Set up map ui features with point selector
     var ui = mapbox.ui().map(m).auto().pointselector(function(d) {
@@ -17,7 +17,7 @@ $(function(){
     });
 
     // Get LGA data and set up LGA typeahead
-    mapbox.converters.googledocs('0AoiGgH1LJtE0dGdwaW1VUW5uY0FSMjF0RVZBVldLTUE', 'od4', typeAhead);
+    //mapbox.converters.googledocs('0AoiGgH1LJtE0dGdwaW1VUW5uY0FSMjF0RVZBVldLTUE', 'od4', typeAhead);
 
     // Set up date pickers
     var now = new Date();
@@ -76,7 +76,7 @@ $(function(){
         }
     });
 
-    function typeAhead(features) {
+    /*function typeAhead(features) {
         var lgas = [];
 
         // Pluck `LGA, state` values
@@ -95,7 +95,7 @@ $(function(){
                 $('#map-control').show();
             }
         });
-    }
+    }*/
 
     function saveLatLon(loc) {
         $('#entry_1').val(loc.lon);
