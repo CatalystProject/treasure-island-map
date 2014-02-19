@@ -33,6 +33,14 @@ $(function(){
         e.preventDefault();
         if (validate($(this))) {
             button.button('loading');
+            
+            
+            var googleForm = $(window).jqGoogleForms({"formKey": "1z1Jaif-HgxOMKROmNPXbRSVfSS0B-QCJbhM1RWWPwwo"});
+
+googleForm.sendFormData(data);
+            
+            
+            /*
             $.ajax({
                 type: 'POST',
                 url: formUrl,
@@ -41,7 +49,12 @@ $(function(){
                     button.button('reset');
                     //window.location = 'index.html#new';
                     console.log(data);
-                }
+                }*/
+                
+                
+                
+                
+                
             });
         }
 
