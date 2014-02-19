@@ -36,16 +36,17 @@ $(function(){
             button.button('loading');
             
             
-            var googleForm = $(window).jqGoogleForms({"formKey": "1z1Jaif-HgxOMKROmNPXbRSVfSS0B-QCJbhM1RWWPwwo"});
+          //  var googleForm = $(window).jqGoogleForms({"formKey": "1z1Jaif-HgxOMKROmNPXbRSVfSS0B-QCJbhM1RWWPwwo"});
 
-googleForm.sendFormData(data);
+//googleForm.sendFormData(data);
             
             
-            /*
+            
             $.ajax({
                 type: 'POST',
                 url: formUrl,
                 data: data,
+                dataType: "jsonp",
                 complete: function() {
                     button.button('reset');
                     //window.location = 'index.html#new';
@@ -53,8 +54,8 @@ googleForm.sendFormData(data);
                 }
    
                 
-            });*/
-            button.button('reset');
+            });
+            //button.button('reset');
         }
 
         function validate(form) {
