@@ -39,7 +39,8 @@ $(function(){
                 data: data,
                 complete: function() {
                     button.button('reset');
-                    window.location = 'index.html#new';
+                    //window.location = 'index.html#new';
+                    console.log(data);
                 }
             });
         }
