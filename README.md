@@ -13,7 +13,7 @@ Forked from https://github.com/nigeria-oil-mapping/citizen-reporting-map for an 
 ## Check out site from repository
 
     # This will check out the site from the remote repository on
-    # GitHub and place it in a local directory named monitoring-platform/
+    # GitHub and place it in a local directory named treasure-island-map/
     git clone git@github.com:CatalystProject/treasure-island-map.git
     # Your site should now be here:
     ls treasure-island-map/
