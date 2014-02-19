@@ -23,7 +23,7 @@ $(function(){
     // Set up date pickers
     var now = new Date();
     now = now.getMonth() + '/' + now.getDate() + '/' + now.getFullYear();
-    $('#entry_284647925').val(now).datepicker({format:'dd/mmyyyy'});
+    $('#entry_284647925').val(now).datepicker({format:'dd/mm/yyyy'});
     
     
 
