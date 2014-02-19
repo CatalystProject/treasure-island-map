@@ -19,7 +19,7 @@
 	// Get data
 	function getData(map) {
 		m = map;
-		mmg_google_docs('0AoiGgH1LJtE0dGdwaW1VUW5uY0FSMjF0RVZBVldLTUE', mapData);
+		mmg_google_docs('0AozujDfh1xlMdFZtaWNxejcwX2htTFdBSlp5b09mNHc', mapData);
 	}
 
 	// Build map
@@ -40,7 +40,7 @@
 				var verifyText = 'Not verified by NOSDRA';
 			}
 			console.log(feature.properties.verified)	
-			var o = '<a target="_blank" href="https://docs.google.com/spreadsheet/ccc?key=0AoiGgH1LJtE0dGdwaW1VUW5uY0FSMjF0RVZBVldLTUE">'
+			var o = '<a target="_blank" href="https://docs.google.com/spreadsheet/ccc?key=0AozujDfh1xlMdFZtaWNxejcwX2htTFdBSlp5b09mNHc">'
 				+ '<div class="marker-title">' + feature.properties.title + '</div>' 
 				+ '<div class="marker-description-top">Area Name: ' + feature.properties.area + '</div>'
 				+ '<div class="marker-description-bottom"><span class="check ' + verifyClass + '"></span><span class="verify-text">' + verifyText + '</span></div></a>';
@@ -86,14 +86,14 @@
 	                },
 	                properties: {
 						'marker-color':'#840A0A',
-						'title': 'Incident: ' + entry['gsx$obsdate'].$t,
-						'area': entry['gsx$localname'].$t, 
-						'verified': entry['gsx$verified'].$t
+						//'title': 'Incident: ' + entry['gsx$obsdate'].$t,
+						//'area': entry['gsx$localname'].$t, 
+						//'verified': entry['gsx$verified'].$t
 					}
 	            };
 	            for (var y in entry) {
-	                if (y === latfield) feature.geometry.coordinates[1] = parseFloat(entry[y].$t);
-	                else if (y === lonfield) feature.geometry.coordinates[0] = parseFloat(entry[y].$t);
+	                if (y === latitude) feature.geometry.coordinates[1] = parseFloat(entry[y].$t);
+	                else if (y === longitude) feature.geometry.coordinates[0] = parseFloat(entry[y].$t);
 	                else if (y.indexOf('gsx$') === 0) {
 	                    feature.properties[y.replace('gsx$', '')] = entry[y].$t;
 	                }
