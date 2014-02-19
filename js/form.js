@@ -1,6 +1,6 @@
 $(function(){
 
-    var formUrl = 'https://docs.google.com/forms/d/1z1Jaif-HgxOMKROmNPXbRSVfSS0B-QCJbhM1RWWPwwo/viewform';//'https://docs.google.com/a/developmentseed.org/spreadsheet/formResponse?formkey=dGdwaW1VUW5uY0FSMjF0RVZBVldLTUE6MQ';
+    var formUrl = 'https://docs.google.com/forms/d/1z1Jaif-HgxOMKROmNPXbRSVfSS0B-QCJbhM1RWWPwwo/formResponse';//'https://docs.google.com/a/developmentseed.org/spreadsheet/formResponse?formkey=dGdwaW1VUW5uY0FSMjF0RVZBVldLTUE6MQ';
 
     // Set up map
     var m = mapbox.map('map').addLayer(mapbox.layer().id('willsimm.hahfo0cc'));
