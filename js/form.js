@@ -99,7 +99,7 @@ $(function(){
     }*/
 
     function saveLatLon(loc) {
-        $('#entry_1').val(loc.lon);
-        $('#entry_2').val(loc.lat);
+        $('#entry_1672423225').val(loc.lon);
+        $('#entry_855548269').val(loc.lat);
     }
 });
