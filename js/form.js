@@ -29,6 +29,7 @@ $(function(){
     $('form').submit(function(e) {
         var button = $('input[type=submit]', this),
             data = $(this).serialize();
+            console.log(data);
 
         e.preventDefault();
         if (validate($(this))) {
