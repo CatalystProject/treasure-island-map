@@ -1,31 +1,22 @@
-# Nigeria Citizen Reporting Map 
+# Catalyst! Energy discoverer map 
 
-Citizen Reporting Map. Available at <http://nigeria-oil-mapping.github.com/citizen-reporting-map>
+Used to allow citizens of Tiree to input data from their energy monitors.
 
-Google Doc Spreadsheet: 
-<https://docs.google.com/a/developmentseed.org/spreadsheet/ccc?key=0AoiGgH1LJtE0dDNMblNhS2J6V0Y4QkRUU3Vya1kyckE#gid=0>
+Uses a Google Doc Spreadsheet as the "database" back end. If you going to reuse this code, create a google docs form - make sure your "fields" are all text with no validation or this code won't post to it.
+
+Forked from https://github.com/nigeria-oil-mapping/citizen-reporting-map for an easy win.
 
 ## System requirements
 
-*For running the site*
-
-Use [Ruby Gem](http://rubygems.org/) to install:
-
-- [Jekyll](http://jekyllrb.com/)
-- [liquid](http://liquidmarkup.org/)
-- [rdiscount](https://github.com/rtomayko/rdiscount/)
+*Should run on any webserver* 
 
 ## Check out site from repository
 
     # This will check out the site from the remote repository on
     # GitHub and place it in a local directory named monitoring-platform/
-    git clone git@github.com:nigeria-oil-mapping/citizen-reporting-map.git
+    git clone git@github.com:CatalystProject/treasure-island-map.git
     # Your site should now be here:
-    ls citizen-reporting-map/
+    ls treasure-island-map/
 
-## Run site
 
-    cd citizen-reporting-map/
-    jekyll
-
-Point browser to `http://localhost:4000/citizen-reporting-map`
+Point browser to whereever you cloned to.
