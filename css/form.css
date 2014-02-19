@@ -87,8 +87,8 @@ sup {
   z-index: 15;
   }
 #map {
-  height:260px;
-  width: 278px;
+  height:480px;
+  width: 600px;
   border: 1px solid #ccc;
   border-radius: 3px;
   }
