@@ -46,7 +46,7 @@ $(function(){
                 type: 'POST',
                 url: formUrl,
                 data: data,
-                dataType: "jsonp",
+                //dataType: "jsonp",
                 complete: function() {
                     button.button('reset');
                     //window.location = 'index.html#new';
