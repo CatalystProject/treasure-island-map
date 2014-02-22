@@ -26,7 +26,7 @@
 	function mapData(f){ 
 		
 		var markers = mapbox.markers.layer().features(f);       
-		console.log(features)     
+		//console.log(features)     
 		map.addLayer(markers);
 		// Set a custom formatter for tooltips
 		// Provide a function that returns html to be used in tooltip
@@ -41,9 +41,9 @@
 			}
 			console.log(feature.properties.verified)	
 			var o = '<a target="_blank" href="https://docs.google.com/spreadsheet/ccc?key=0AozujDfh1xlMdFZtaWNxejcwX2htTFdBSlp5b09mNHc">'
-				+ '<div class="marker-title">' + feature.properties.title + '</div>' 
-				+ '<div class="marker-description-top">Area Name: ' + feature.properties.area + '</div>'
-				+ '<div class="marker-description-bottom"><span class="check ' + verifyClass + '"></span><span class="verify-text">' + verifyText + '</span></div></a>';
+				+ '<div class="marker-title">Observed: ' + feature.properties.date + '</div>' 
+				+ '<div class="marker-description-top">Wind: ' + feature.properties.wind + ' Solar: ' + feature.properties.solar + '</div>';
+				//+ '<div class="marker-description-bottom"><span class="check ' + verifyClass + '"></span><span class="verify-text">' + verifyText + '</span></div></a>';
 			return o;
 			console.log(o)
 		});			
@@ -63,7 +63,7 @@
 	// google_docs.js
 	function mmg_google_docs(id, callback) {
 	    if (typeof reqwest === 'undefined') {
-	        throw 'CSV: reqwest required for mmg_csv_url';
+	        throw 'CSV: request required for mmg_csv_url';
 	    }
 
 	    function response(x) {
@@ -79,6 +79,7 @@
 
 	        for (var i = 0; i < x.feed.entry.length; i++) {
 	            var entry = x.feed.entry[i];
+	            //console.log(entry);
 	            var feature = {
 	                geometry: {
 	                    type: 'Point',
@@ -86,7 +87,10 @@
 	                },
 	                properties: {
 						'marker-color':'#840A0A',
-						//'title': 'Incident: ' + entry['gsx$obsdate'].$t,
+						'email': entry['gsx$email'].$t,
+						'solar': entry['gsx$solarlevel'].$t,
+						'wind':  entry['gsx$windspeed'].$t,
+						'date':  entry['gsx$date'].$t,
 						//'area': entry['gsx$localname'].$t, 
 						//'verified': entry['gsx$verified'].$t
 					}
