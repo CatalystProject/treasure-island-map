@@ -1,4 +1,4 @@
-# Catalyst! Energy discoverer map 
+# Catalyst! Treasure Island Energy Discoverers 
 
 Used to allow citizens of Tiree to input data from their energy monitors.
 
