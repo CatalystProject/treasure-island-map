@@ -19,7 +19,7 @@ $(function(){
     
     
     
-    m.on('click', function(e) {
+    map.on('click', function(e) {
 	alert(e.latlng);
     });
 
