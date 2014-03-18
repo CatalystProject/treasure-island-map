@@ -8,20 +8,20 @@ $(function(){
     //m.addLayer(mapbox.layer().id('nigeriaoil.nigeria-lga'));
 
     // Set up map ui features with point selector
-    /*var ui = mapbox.ui().map(m).auto().pointselector(function(d) {
+    var ui = mapbox.ui().map(m).auto().pointselector(function(d) {
         // Remove all points except the most recent
         for (var i = 0; i < d.length - 1; i++) {
             var locs = ui['_pointselector'].locations();
             ui['_pointselector'].deleteLocation(locs[i]);
         }
         saveLatLon(d[0]);
-    });*/
-    
-    
-    
-    map.on('click', function(e) {
-	alert(e.latlng);
     });
+    
+    
+    /*
+    m.on('click', function(e) {
+	alert(e.latlng);
+    });*/
 
     // Get LGA data and set up LGA typeahead
     //mapbox.converters.googledocs('0AoiGgH1LJtE0dGdwaW1VUW5uY0FSMjF0RVZBVldLTUE', 'od4', typeAhead);
