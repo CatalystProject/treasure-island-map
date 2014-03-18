@@ -127,7 +127,7 @@ $(function(){
         target_lat=56.535727438167584;
         target_long=-6.756131332397456;
         
-        if ((loc.lat >= (target_lat-0.003) && loc.lat <= (target_lat+0.003)) && (loc.lon >= (target_lon-0.003) && loc.lon <= (target_lon+0.003)) {
+        if ((loc.lat >= (target_lat-0.003) && loc.lat <= (target_lat+0.003)) && (loc.lon >= (target_lon-0.003) && loc.lon <= (target_lon+0.003))) {
             $('#entry_1672423225').val("in");
         }
         else { $('#entry_1672423225').val("out"); }
